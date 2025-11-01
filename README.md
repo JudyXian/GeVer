@@ -1,1 +1,17 @@
 # GeVer
+
+## Introduction
+
+Language to SQL (NL2SQL) aims to translate natural language questions into executable SQL statements, allowing users to interact with databases without SQL expertise. While Large Language Models (LLMs) have achieved the state-of-the-art (SOTA) performance in NL2SQL tasks, they struggle with complex questions, whose corresponding SQL queries involve multiple sub-queries and many SQL operators, significantly limiting their practical applications. To address the limitations of LLMs in NL2SQL for complex questions, we propose GeVeR, a novel framework employing a pipeline of guided question decomposition, semantic consistency based verification, and fine-grained revisions. Specifically, GeVeR decomposes complex questions into sub-questions guided by SQL knowledge, verifies the generated SQL queries by inspecting the consistency between SQL semantics and user intents, and designs fine-grained revisions for various error types of generated SQL queries. This approach significantly enhances the accuracy and robustness of NL2SQL for complex questions. Extensive experiments demonstrate that GeVeR consistently outperforms current methods.
+
+## Dataset
+
+- Spider((https://yale-lily.github.io/spider)
+
+## Quick Start
+
+- Spider
+
+```
+python spider_process/gever_whole_procedure.py
+```
